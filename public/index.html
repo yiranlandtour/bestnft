@@ -3,47 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NFT Minting Page</title>
+<title>NFT Minting Interface</title>
 <style>
-  body { font-family: Arial, sans-serif; }
-  .container { width: 80%; margin: 0 auto; }
-  .header { text-align: center; }
-  .mint-options { display: flex; justify-content: space-around; margin-top: 20px; }
-  .option { border: 1px solid black; padding: 10px; text-align: center; }
-  .wallet { text-align: center; margin-top: 20px; }
-  button { margin-top: 10px; }
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000066; /* Dark blue background */
+    color: white;
+    text-align: center;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+  .mint-status {
+    font-size: 24px;
+  }
+  .connect-btn {
+    background-color: #0044cc; /* Blue background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .options {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .option {
+    margin: 0 20px;
+  }
+  .option img {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .option p {
+    margin: 5px 0;
+    font-size: 18px;
+  }
 </style>
 </head>
 <body>
 <div class="container">
   <div class="header">
     <h1>Choose your way to mint</h1>
-    <button>Connect</button>
-    <p>Minted: 2134/5000</p>
+    <button class="connect-btn">Connect</button>
   </div>
-  <div class="mint-options">
+  <div class="mint-status">
+    Minted: 2356/5000
+  </div>
+  <div class="options">
     <div class="option">
-      <h2>Burn my Aurorium</h2>
-      <p>Burned: 354/497</p>
-      <p>Burn 1 Aurorium to get 3 NFT</p>
-      <div class="wallet">
-        <img src="wallet1.png" alt="Wallet">
-        <button>Burn</button>
-      </div>
+      <img src="aurorium-icon.png" alt="Burn your Aurorium">
+      <p>Burn your Aurorium</p>
     </div>
     <div class="option">
-      <h2>Burn my Gen Zero</h2>
-      <p>Burned: 355/1k</p>
-      <p>Burn 270 points to mint 1 NFT</p>
-      <div class="wallet">
-        <img src="wallet2.png" alt="Wallet">
-        <button>Burn</button>
-      </div>
+      <img src="gen-zero-icon.png" alt="Burn your Gen Zero">
+      <p>Burn your Gen Zero</p>
     </div>
     <div class="option">
-      <h2>Classic Mint</h2>
-      <p>Pay 0.1 sol to mint 1 NFT</p>
-      <button>Confirm Mint</button>
+      <img src="classic-mint-icon.png" alt="Classic Mint">
+      <p>Classic Mint 0.1 Sol</p>
     </div>
   </div>
 </div>
