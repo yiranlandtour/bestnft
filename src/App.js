@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ButtonComponent from "./ButtonComponent";
+import Button from "./Button"; 
 // import ButtonComponent from "./ConnectWalletButton";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Button /> 
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -20,10 +22,6 @@ function App() {
           Learn React
         </a>
       </header>
-      <div>
-      {/* 在这里使用你的按钮组件 */}
-      <ButtonComponent />
-    </div>
     </div>
 
     
