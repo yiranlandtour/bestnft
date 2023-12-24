@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import ButtonComponent from "./ButtonComponent";
+import ButtonComponent from "./ConnectWalletButton";
 
 function App() {
   return (
@@ -18,7 +20,13 @@ function App() {
           Learn React
         </a>
       </header>
+      <div>
+      {/* 在这里使用你的按钮组件 */}
+      <ButtonComponent />
     </div>
+    </div>
+
+    
   );
 }
 
