@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ButtonComponent from "./ButtonComponent";
-import ButtonComponent from "./ConnectWalletButton";
+// import ButtonComponent from "./ConnectWalletButton";
 
 function App() {
   return (
