@@ -4,6 +4,7 @@ import { Wallet } from "@viaprotocol/web3-wallets";
 function ConnectWalletButton() {
   const handleConnectWallet = async () => {
     try {
+        console.log("click the button");
       const wallet = new Wallet();
       await wallet.connect();
       alert("Connected to wallet successfully!");
