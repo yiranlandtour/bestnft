@@ -15,7 +15,7 @@ function ConnectWalletButton() {
   };
 
   return (
-    <button onClick={handleConnectWallet}>Connect</button>
+    <button id="connect-button" onClick={handleConnectWallet}>Connect</button>
   );
 }
 
