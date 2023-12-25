@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import ButtonComponent from "./ButtonComponent";
+
 import Button from "./Button"; 
 // import ButtonComponent from "./ConnectWalletButton";
 
@@ -10,7 +10,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Button /> 
-        <ButtonComponent />
+        
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
